@@ -1235,7 +1235,7 @@ div.container .slide-show .button  .prev{
     background-color: rgba(0,0,0,-0.5);
     border: 1px solid rgb(204, 204, 204);
     border-radius: 16px;
-    top: 418%;
+    top: 466%;
     left: 353px;
 
 }
@@ -1257,7 +1257,7 @@ div.container .slide-show .button  .next{
     background-color: rgba(0,0,0,-0.5);
     border: 1px solid rgb(204, 204, 204);
     border-radius: 16px;
-    top: 418%;
+    top: 466%;
     right: 333px;
 
 }
