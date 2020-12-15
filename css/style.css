@@ -1195,6 +1195,7 @@ div.container .keyword-hot .slide-show{
     display: flex;
     overflow: hidden;
     padding: 15px;
+    position: relative;
 }
 div.container .keyword-hot .slide1{
     display: flex;
@@ -1235,8 +1236,8 @@ div.container .slide-show .button  .prev{
     background-color: rgba(0,0,0,-0.5);
     border: 1px solid rgb(204, 204, 204);
     border-radius: 16px;
-    top: 466%;
-    left: 353px;
+    top: 35%;
+    left: 2%;
 
 }
 div.container .slide-show .button  .next{
@@ -1257,8 +1258,8 @@ div.container .slide-show .button  .next{
     background-color: rgba(0,0,0,-0.5);
     border: 1px solid rgb(204, 204, 204);
     border-radius: 16px;
-    top: 466%;
-    right: 333px;
+    top: 35%;
+    right: 0.5%;
 
 }
   
