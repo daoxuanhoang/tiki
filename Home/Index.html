@@ -9,11 +9,13 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://frontend.tikicdn.com/_desktop-next/static/css/_sprite.css?v=202012202359d5msiLTqVP~TXwiLi1Pyk"
         rel="stylesheet" type="text/css" class="next-head">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -31,19 +33,18 @@
 <body>
     <header class="header">
         <div class="header-top">
-            <div id="header">
                 <div class="header-right">
                     <a class="header-item" href="">
                         <img style="margin-right: 4px;"
                             src="https://salt.tikicdn.com/ts/upload/42/f9/5e/7ccf8b09de0e051cc9054bd535f7b1a1.png"
-                            alt="" width="18px" />
+                            alt="" width="19%" />
                         <span class="content">Ticketbox</span>
                     </a>
                     <div class="assistant">
                         <a class="header-item" href="">
                             <img style="margin-right: 4px;"
                                 src="https://salt.tikicdn.com/media/upload/2019/01/30/736dfae48db88034a73e7fdb7f72756b.png"
-                                alt="" width="18px">
+                                alt="" width="19%">
                             <span class="content">Trợ lý Tiki</span>
                             <div class="assistant-content">
                                 <div class="content-text">
@@ -100,7 +101,6 @@
                         </a>
                     </div>
                 </div>
-            </div>
         </div>
         <div class="navbar">
             <div class="navbar-middle">
@@ -129,7 +129,7 @@
                 <div class="navbar-middle-right">
                     <a href="">
                         <div class="order-tracking">
-                            <i style="margin-right: 12px;" class="tikicon icon-tracking"></i>
+                            <i style="margin-right: 10px;" class="tikicon icon-tracking"></i>
                             <span class="itemtext">Theo dõi </br>đơn hàng</span>
                         </div>
                     </a>
@@ -139,18 +139,15 @@
                         <span class="nitification-text">Thông báo </br> của tôi</span>
                     </div>
                     <div class="account">
-                        <i style="margin-right: 12px;" class="tikicon icon-user"></i>
-                        <span class="account-text">
-                            <span class="account-text-row">
-                                Đăng nhập
-                                </br>
-                                <small>Tài khoản</small>
-                            </span>
-                        </span>
+                        <i class="tikicon icon-user"></i>
+                        <p>
+                            <span>Đăng nhập</span> <span>Tài khoản</span>
+
+                        </p>
                         <div class="account-dropdown">
                             <button class="btn btn-warning">Đăng nhập</button>
                             <button class="btn btn-warning">Tạo tài khoản</button>
-                            <button class="facebook btn-primary">
+                            <button class="facebook btn btn-primary">
                                 <span class="facebook-text  "><i class="tikicon icon-facebook-white"
                                         aria-hidden="true"></i></span>
                                 Đăng nhập bằng Facebook
@@ -168,7 +165,7 @@
                     <div class="cart">
                         <a href="">
                             <div class="itemcart">
-                                <i style="margin-right: 12px;" class="tikicon icon-cart"></i>
+                                <i class="tikicon icon-cart"></i>
                                 <span class="itemtext">Giỏ hàng
                                     <span class="itemcartQty">0</span>
                                 </span>
@@ -182,21 +179,120 @@
             <div class="container">
                 <div class="menu">
                     <div class="menu-button">
-                        <a class="button">
-                            <i style="margin-right: 3px;" class="Menu-icon tikicon icon-burger-menu" aria-hidden="true"></i>
+                        <a class="button" href="">
+                            <i class="Menu-icon tikicon icon-burger-menu" aria-hidden="true"></i>
                             <span class="parent">DANH MỤC SẢN PHẨM</span>
+                        </a>
+                    </div>
+                    <div class="dropdown">
+                        <a class="menu-link" href="">
+                            <span class="icon-wrap">
+                                <i class="icon-main-menu-cellphone lv1-icon tikicon"></i>
+                            </span>
+                            <span class="text">Điện Thoại - Máy Tính Bảng</span>
+                        </a>  
+                        <a class="menu-link" href="">
+                            <span class="icon-wrap">
+                                <i class="icon-main-menu-tv lv1-icon tikicon"></i>
+                            </span>
+                            <span class="text">Điện Tử - Điện Lạnh</span>
+                        </a>
+                        <a class="menu-link" href="">
+                            <span class="icon-wrap">
+                                <i class="icon-main-menu-headphone lv1-icon tikicon"></i>
+                            </span>
+                            <span class="text">Phụ Kiện - Thiết Bị Số</span>
+                        </a>
+                        <a class="menu-link" href="">
+                            <span class="icon-wrap">
+                                <i class="icon-main-menu-laptop lv1-icon tikicon"></i>
+                            </span>
+                            <span class="text">Laptop - Thiết bị IT</span>
+                        </a>
+                        <a class="menu-link" href="">
+                            <span class="icon-wrap">
+                                <i class="icon-main-menu-camera lv1-icon tikicon"></i>
+                            </span>
+                            <span class="text">Máy Ảnh - Quay Phim</span>
+                        </a>
+                        <a class="menu-link" href="">
+                            <span class="icon-wrap">
+                                <i class="icon-main-menu-electronic lv1-icon tikicon"></i>
+                            </span>
+                            <span class="text">Điện Gia Dụng</span>
+                        </a>
+                        <a class="menu-link" href="">
+                            <span class="icon-wrap">
+                                <i class="icon-main-menu-pan lv1-icon tikicon"></i>
+                            </span>
+                            <span class="text">Nhà Cửa Đời Sống</span>
+                        </a>
+                        <a class="menu-link" href="">
+                            <span class="icon-wrap">
+                                <i class="icon-main-menu-sprayer lv1-icon tikicon"></i>
+                            </span>
+                            <span class="text">Hàng Tiêu Dùng - Thực Phẩm</span>
+                        </a>
+                        <a class="menu-link" href="">
+                            <span class="icon-wrap">
+                                <i class="icon-main-menu-bottle lv1-icon tikicon"></i>
+                            </span>
+                            <span class="text">Đồ chơi, Mẹ & Bé</span>
+                        </a>
+                        <a class="menu-link" href="">
+                            <span class="icon-wrap">
+                                <i class="icon-main-menu-lipsticks lv1-icon tikicon"></i>
+                            </span>
+                            <span class="text">Làm Đẹp - Sức Khỏe</span>
+                        </a>
+                        <a class="menu-link" href="">
+                            <span class="icon-wrap">
+                                <i class="icon-main-menu-tshirt lv1-icon tikicon"></i>
+                            </span>
+                            <span class="text">Thời trang - Phụ kiện</span>
+                            <i class="addon-icon tikicon icon-hot"></i>
+                        </a>
+                        <a class="menu-link" href="">
+                            <span class="icon-wrap">
+                                <i class="icon-main-menu-sport lv1-icon tikicon"></i>
+                            </span>
+                            <span class="text">Thể Thao - Dã Ngoại</span>
+                        </a>
+                        <a class="menu-link" href="">
+                            <span class="icon-wrap">
+                                <i class="icon-main-menu-bike lv1-icon tikicon"></i>
+                            </span>
+                            <span class="text">Xe Máy, Ô tô, Xe Đạp</span>
+                        </a>
+                        <a class="menu-link" href="">
+                            <span class="icon-wrap">
+                                <i class="icon-main-menu-global lv1-icon tikicon"></i>
+                            </span>
+                            <span class="text">Hàng quốc tế</span>
+                        </a>
+                        <a class="menu-link" href="">
+                            <span class="icon-wrap">
+                                <i class="icon-main-menu-book lv1-icon tikicon"></i>
+                            </span>
+                            <span class="text">Sách, VPP & Quà Tặng</span>
+                        </a>
+                        <a class="menu-link" href="">
+                            <span class="icon-wrap">
+                                <i class="icon-main-menu-voucher lv1-icon tikicon"></i>
+                            </span>
+                            <span class="text">Voucher - Dịch Vụ - Thẻ Cào</span>
                         </a>
                     </div>
                 </div>
                 <div class="location">
                     <a id="header-location">
-                        <i style="margin-right: 3px;" class="tikicon icon-location-picker" aria-hidden="true"></i>
+                        <i class="tikicon icon-location-picker" aria-hidden="true"></i>
                         <span class="parent">Bạn muốn giao hàng tới đâu</span>
                     </a>
                 </div>
                 <div class="product">
                     <a href="">
-                        <i style="margin-right: 3px;" class="tikicon icon-arrow-down" aria-hidden="true"></i>
+                        <i class="tikicon icon-arrow-down" aria-hidden="true"></i>
                         <span class="producttext">Sản phẩm </br> bạn đã xem</span>
                         <div class="product-content">
                             <p class="empty">Bạn chưa xem sản phẩm nào</br>Hãy tiếp tục khám phá Tiki, các sản phẩm bạn đã xem sẽ hiển thị ở đây!</p>
@@ -205,24 +301,24 @@
                 </div>
                 <div class="bottom">
                     <a class="bottom-link" href="">
-                        <img style="margin-right: 3px;" src="https://frontend.tikicdn.com/_desktop-next/static/img/tiki-card.svg" alt="" width="64px">
-                        <span class="parent"  style="margin-right:25px;">Hoàn tiền</br> 15%</span>
+                        <img src="https://frontend.tikicdn.com/_desktop-next/static/img/tiki-card.svg" alt="" width="64px">
+                        <span class="parent">Hoàn tiền</br> 15%</span>
                     </a>
                     <a class="bottom-link" href="" target="_blank">
-                        <i style="margin-right: 3px;" class="tikicon icon-tikinow"></i>
-                        <span class="parent"  style="margin-right: 25px;">Giao nhanh </br> 2h & hôm sau</span>
+                        <i class="tikicon icon-tikinow"></i>
+                        <span class="parent">Giao nhanh </br> 2h & hôm sau</span>
                     </a>
                     <a class="bottom-link" href="">
-                        <img style="margin-right: 3px;" src="https://salt.tikicdn.com/ts/upload/c1/cc/d0/6dc657167181c1b6b93c8da654dddac3.png" alt=""
-                            width="64px">
-                        <span class="parent"  style="margin-right: 25px;">Thực phẩm</br> tươi sống</span>
+                        <img src="https://salt.tikicdn.com/ts/upload/c1/cc/d0/6dc657167181c1b6b93c8da654dddac3.png" alt=""
+                          width="64px" height="30px">
+                        <span class="parent">Thực phẩm</br> tươi sống</span>
                     </a>
                     <a class="bottom-link" href="">
-                        <i style="margin-right: 3px;" class="tikicon icon-exclusive"></i>
-                        <span class="parent"  style="margin-right: 25px;">Sản phẩm </br>chính hiệu</span>
+                        <i class="tikicon icon-exclusive"></i>
+                        <span class="parent">Sản phẩm </br>chính hiệu</span>
                     </a>
                     <a class="bottom-link" href="">
-                        <i style="margin-right: 3px;" class="tikicon icon-return"></i>
+                        <i class="tikicon icon-return"></i>
                         <span class="parent">30 ngày</br> đổi trả</span>
                     </a>
                 </div>
@@ -3495,8 +3591,8 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div>
+        <div class="containers">
+            <div class="containers-img">
                 <img src="https://salt.tikicdn.com/ts/banner/7c/aa/05/05f8119e8d13328a782a35ec01a7ea8d.png" alt="">
             </div>
             <div class="primary-banner-container">
