@@ -25,7 +25,9 @@ div.header-top {
     margin-right: auto;
     margin-left: auto; 
 }
-
+div.header-top .header-right .sub-menu-header{
+    display: none;
+}
 
 a.header-item {
     line-height: 26px;
@@ -888,7 +890,7 @@ span.producttext{
 }
 .main .banners .banners-left .banners-left-top{
     display: flex;
-    height: 362px;
+    height: 65%;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -904,7 +906,7 @@ span.producttext{
 }
 .main .banners .banners-left .banners-left-top .slide .slide-wrapper .slideshow-container{
     width: 100%;
-    height: 300px;
+    height: 100%;
     position: relative;
     margin: auto;
     cursor: pointer;
@@ -942,8 +944,8 @@ span.dot {
     cursor: pointer;
     height: 12px;
     width: 12px;
-    margin: 1px 2px;
-    padding: 0;
+    margin: 1px 4px;
+    padding: 0 5px;
     background-color: rgb(129, 129, 129);
     border: 1px solid transparent;
     border-radius: 50%;
@@ -964,27 +966,42 @@ span.dot {
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 13px}
 }
-.mySlides {display: none}
+.mySlides {
+    width: 100% !important;
+    height: 100%;
+}
 img {vertical-align: middle;}
-
+.mySlides img{
+    min-width: 100%;
+    margin: auto;
+    min-height: 100%;
+}
+.main .banners .banners-left .banners-left-top .slide .slide-wrapper .slideshow-container .list-dot{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .main .banners .banners-left .banner-left-bottom{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: 35%;
 }
 .main .banners .banners-left .banner-left-bottom .banner-left-bottom-left{
     display: flex;
     flex-wrap: wrap;
     width: 50%;
     height: 181px;
-    background:rgb(148, 191, 255) ;
+    background: white;
 }
 .main .banners .banners-left .banner-left-bottom .banner-left-bottom-right{
     display: flex;
     flex-wrap: wrap;
     width: 50%;
     height: 181px;
-    background:rgb(148, 191, 255) ;
+    background:white ;
 }
 .main .banners .banners-right{
     display: flex;

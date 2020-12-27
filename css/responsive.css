@@ -55,11 +55,11 @@
     .header-bottom > .container > .menu{
         width: 30%;
     }
+
     .header-bottom > .container > .menu .dropdown{
         opacity: 0;
         width: 215px;
         display: grid;
-        /*   */
         visibility: hidden;
         position: absolute;
         background-color: white;
@@ -93,7 +93,7 @@
         display: flex;
     }
     .product-content{
-        width: 60vh;
+        display: none;
     }
     .product-content::after{
         left: 72%;
@@ -117,9 +117,7 @@
     .main .banners .banners-left .banners-left-top{
         height: 430px;
     }
-    .main .banners .banners-left .banners-left-top .slide .slide-wrapper .slideshow-container{
-        height: 366px;
-    }
+
     .main .banners .banners-left .banner-left-bottom{
         display: none;
     }
@@ -187,6 +185,11 @@
     div.containers .home-deal .body .item-wrapper .price .percent-deal{
         top: 12px;
         left: 70px;
+    }
+    .mySlides img{
+        width: 100%;
+        margin: auto;
+        height: 100%;
     }
     /*end*/
     /*footer*/
@@ -274,11 +277,11 @@
     /*end*/
 }
 
-@media only screen and (min-width:997px) and (max-width:1473px){
+@media only screen and (min-width:997px) and (max-width:1781px){
     /*header*/
     div.navbar{
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 3%;
+        padding-right: 3%;
     }
     div.header-bottom{
         padding-left: 5%;
@@ -293,11 +296,11 @@
         justify-content: space-around;
     }
     .product-content{
-        width: 50vh;
+        width: 70vh;
         left: -240px !important;
     }
     .product-content::after{
-        left: 48%;
+        left: 37.5%;
     }
     .header .header-bottom .container .bottom .bottom-link .tikicon.icon-exclusive{
         background-size: 445px 382px;
@@ -323,15 +326,22 @@
     /*end*/
     /*main*/
     .main{
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .main > .main-navigation{
         width: 25%;
         line-height: 40px;
     }
     .menu-item > .sub-menu{
-        width: 50vh;
+        width: 355%;
+        height: 669px;
+    }
+    .menu-item:hover::after{
+        top:24%;
+        right: -32px;
+        border-right: 22.8px solid transparent;
+        border-left: 22.8px solid transparent;
     }
     .sub-menu > .left{
         width: 30%;
@@ -354,9 +364,7 @@
     .main .banners .banners-left .banners-left-top{
         height: 489px;
     }
-    .main .banners .banners-left .banners-left-top .slide .slide-wrapper .slideshow-container{
-        height: 83%;
-    }
+
     .main .banners .banners-left .banner-left-bottom .banner-left-bottom-left{
         background-color: white;
         justify-content: center;
@@ -375,8 +383,8 @@
     /*end*/
     /*container*/
     div.containers{
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .footer .newsletter .newsletter-form button{
         width: 20%;
@@ -393,20 +401,20 @@
     /*end*/
     /*footer*/
     .footer .newsletter{
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .footer .information{
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .footer .addresses{
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .footer .copy-right{
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .footer .information .block{
         width: 25%;
@@ -416,11 +424,193 @@
 @media only screen and (max-width: 768px){
     /*for mobile*/
     /*header*/
+    .header-top .header-right{
+        justify-content: flex-end;
+    }
+    .header-top .header-right .header-item{
+        display: none;
+        position: relative;
+    }
+    div.header-top .header-right .sub-menu-header{
+        display: block;
+        position: relative;
+        margin-bottom: auto;
+        max-width: 30px;
+    }
+    div.header-top .header-right .sub-menu-header:hover .dropdown .header-item{
+        opacity: 1;
+        visibility: visible;
+        z-index: 999;
+    }
+    div.header-top .header-right .sub-menu-header .dropdown{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: -174px;
+        border-radius: 7px !important;
+        /* border: 1px solid white; */
+        /* background: white; */
+        padding: 7px;
+    }
+    div.header-top .header-right .sub-menu-header .dropdown .header-item{
+        display: inline;
+        /* position: absolute; */
+        visibility: hidden;
+        padding: 14px;
+        background-color: white;
+        top: -4px;
+        width: 185px;
+        /* height: 400px; */
+        right: -5px;
+    }
+    div.header-top .header-right .sub-menu-header .dropdown a img{
+        width: 15%;
+    }
+    /* div.header-top .header-right .sub-menu-header .dropdown a:hover{
+        color: blue;
+    } */
+    div.header-top .header-right .sub-menu-header .dropdown a span{
+        color: black;
+    }
     .assistant{
         display: none;
     }
     .navbar-middle-right .cart .itemcart .itemcartQty{
         display: none;
+    }
+    /*end*/
+    /*main*/
+    /* .mySlides img{
+        width: 100%;
+        margin: auto;
+        height: 100%;
+    } */
+    /*end*/
+    /*footer*/
+    .footer .newsletter .newsletter-icon{
+        width: 10%;
+        margin-top: -5px;
+    }
+    .footer .newsletter .newsletter-description{
+        width: 31%;
+    }
+    .footer .newsletter .newsletter-form{
+        width: 50%;
+    }
+    .footer .information{
+        display: none;
+    }
+    /*end*/
+}
+
+@media only screen and (max-width: 485px){
+    /*header*/
+    header.header .header-top{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    header.header .navbar{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    div.header-bottom{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .navbar .navbar-middle .navbar-middle-left .logo{
+        width: 15%;
+    }
+    .navbar .navbar-middle .navbar-middle-left .logo .logotiki-right img{
+        display: none;
+    }
+    header .navbar-middle-left .formsearch .formsearch-form .formsearch-button{
+        background-color: white;
+    }
+    header .navbar-middle-left .formsearch .formsearch-form .formsearch-button span{
+        display: none;
+    }
+    header .navbar-middle-right .cart .itemcart{
+        border: 0px;
+    }
+    header .navbar-middle-right .cart .itemcart .itemtext{
+        display: none;
+    }
+    .header-bottom > .container > .menu{
+        width: 100%;
+    }
+    header .header-bottom .container .product{
+        display: none;
+    }
+    header .header-bottom .container .location{
+        display: none;
+    }
+    /*end*/
+    /*main*/
+    main .main{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    div.containers{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    div.containers .home-deal .header .img{
+        width: 50%;
+    }
+    div.containers .home-deal .header .img .img-1{
+        width: 20%;
+    }
+    div.containers .home-deal .header .img .img-2{
+        width: 5%;
+    }
+    div.containers .home-deal .header .img .img-3{
+        width: 20%;
+    }
+    div.containers .home-deal .header .navigation{
+        width: 45%;
+        text-align: end;
+    }
+    div.containers .home-deal .body .item-wrapper{
+        width: 95%;
+    }
+    /*end*/
+    /*footer*/
+    .footer .newsletter{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    footer.footer .newsletter .newsletter-icon{
+        display: none;
+    }
+    footer.footer .newsletter .newsletter-description{
+        width: 40%;
+    }
+    footer.footer .newsletter .newsletter-form{
+        width: 55%;
+    }
+    footer.footer .newsletter .newsletter-form input{
+        width: 55%;
+    }
+    footer.footer .newsletter .newsletter-form button{
+        width: 25%;
+        padding: 0px;
+    }
+    .footer .addresses{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    footer.footer .information{
+        display: none;
+    }
+    .footer .copy-right{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    footer.footer .copy-right .block .img-left{
+        display: none;
+    }
+    footer.footer .copy-right .block .img-right img{
+        width: 100%;
     }
     /*end*/
 }
